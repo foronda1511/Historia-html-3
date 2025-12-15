@@ -1,0 +1,122 @@
+header{
+    background-color: rgb(30, 30, 65);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-shadow: blue 3px 4px 3px;
+}
+
+body{
+  background-image: url("/images/fondo.jpeg");
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 18%;
+    background-color: rgba(17, 26, 66, 0.514);
+    margin-right: 20%;
+}
+
+.content {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+
+img{
+    border-radius: 20px;
+    width:100%;
+    height: auto;
+    transition: transform 0.1s;
+}
+
+p {
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+article:hover{
+    transform: scale(1.2);
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(3, 3, 83);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: white 3px 6px 9px;
+}
+
+.home:hover {
+    color: red;
+    background-color: black;
+    box-shadow: white 3px 6px 9px;
+    border: none;
+    border-radius: 8px;
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        width: 90%;
+    }
+
+    .content {
+        grid-template-columns: 1fr; 
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px; 
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    article img {
+        width: 100%;  
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
